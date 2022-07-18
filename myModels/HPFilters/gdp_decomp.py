@@ -22,7 +22,7 @@ gdp_decomp["cycle"] = cycle
 gdp_decomp["trend"] = trend
 
 import matplotlib.pyplot as plt
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(figsize=(20,10))
 gdp_decomp[["realgdp", "trend"]]["2000-03-31":].plot(ax=ax, fontsize = 16)
 
 plt.show()
